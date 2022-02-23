@@ -6,10 +6,16 @@
   "scripts": {
     "backend:install": "cd udagram-api && npm install && cd ..",
     "backend:build": "cd udagram-api && npm run build && cd ..",
+    "backend:test": "cd udagram-api && npm test && cd ..",
     "backend:deploy": "cd udagram-api && npm run deploy && cd ..",
     "frontend:install": "cd udagram-frontend && npm install && cd ..",
     "frontend:build": "cd udagram-frontend && npm run build && cd ..",
-    "frontend:deploy": "cd udagram-frontend && npm run deploy && cd .."
+    "frontend:test": "cd udagram-frontend && npm test && cd ..",
+    "frontend:deploy": "cd udagram-frontend && npm run deploy && cd ..",
+    "install": "npm run backend:install && npm run frontend:install",
+    "build": "npm run backend:build && npm run frontend:build",
+    "test": "npm run backend:test && npm run frontend:test",
+    "deploy": "npm run backend:deploy && npm run frontend:deploy"
   },
   "author": "",
   "license": "ISC"
