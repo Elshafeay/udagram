@@ -29,3 +29,11 @@ jobs:
       - run:
           name: deploying the project
           command: npm run deploy
+workflows:
+  workflow:                    
+    jobs:
+      - build:  
+          filters:
+            branches:
+               only:                
+                  - main
