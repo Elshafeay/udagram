@@ -23,12 +23,6 @@ jobs:
       - run:
           name: running the project tests
           command: npm run test
-      - run:
-          name: Setting up Elastic Beanstalk environment variables
-          command: eb init --platform node.js --region us-east-1 && eb use udagram-api-dev && eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_PASSWORD=$POSTGRES_PASSWORD POSTGRES_DB=$POSTGRES_DB POSTGRES_HOST=$POSTGRES_HOST JWT_SECRET=$JWT_SECRET
-      - run:
-          name: deploying the project
-          command: npm run deploy
 workflows:
   workflow:                    
     jobs:
