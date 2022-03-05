@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/Elshafeay/udagram/tree/main.svg?style=svg)](https://circleci.com/gh/Elshafeay/udagram/tree/main)
+[![CircleCI](https://circleci.com/gh/fwd-projects/udagram/tree/main.svg?style=shield)](https://circleci.com/gh/fwd-projects/udagram/tree/main)
 
 ## Description
 
